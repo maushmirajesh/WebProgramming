@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maushmi Rajesh">
+    <meta name="description" content="A personal web page about Maushmi Rajesh.">
+    <title>About Maushmi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        #profile {
+            text-align: center;
+            margin: 20px;
+        }
+
+        #profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #about-me, #bucket-list, #media {
+            padding: 20px;
+            margin: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Maushmi</h1>
+    </header>
+    
+    <section id="profile">
+        <a href="https://www.linkedin.com/in/maushmi-rajesh-885534239" target="_blank">
+            <img src="C:\Users\maush\Downloads\pic.jpg" alt="Maushmi" id="profile-pic">
+        </a>
+    </section>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>I am Maushmi Rajesh, and I have a passion for software development and mystery stories. My strengths include problem-solving and creativity, while my weaknesses involve impatience and a tendency to micromanage.</p>
+        <h3>Strengths:</h3>
+        <ul>
+            <li>Communication</li>
+            <li>Analytical skills</li>
+            <li>Adaptability</li>
+            <li>Resourceful</li>
+        </ul>
+        <h3>Weaknesses:</h3>
+        <ul>
+            <li>Impatient</li>
+            <li>Perfectionism</li>
+            <li>Flighty</li>
+            <li>Competitive</li>
+        </ul>
+    </section>
+
+    <section id="bucket-list">
+        <h2>Bucket List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Serial Number</th>
+                    <th>Items</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Travel the world</td>
+                    <td>Not Completed</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Meet Zayn Malik</td>
+                    <td>Not Completed</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Write a book</td>
+                    <td>Not Completed</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Go scuba diving</td>
+                    <td>Not Completed</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Star in a movie</td>
+                    <td>Not Completed</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="media">
+        <h2>Media</h2>
+        <div>
+            <h3>My Favorite Movie Clip</h3>
+            <video width="600" controls>
+                <source src="C:\Users\maush\Downloads\LoveActually.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div>
+            <h3>My Favorite Song</h3>
+            <audio controls>
+                <source src="C:\Users\maush\Downloads\DoIWannaKnow.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    <button id="welcome-btn">Click Me!</button>
+
+    <script>
+        document.getElementById('welcome-btn').addEventListener('click', function() {
+            alert('Hello, welcome to my page!');
+        });
+
+        document.getElementById('profile-pic').addEventListener('mouseover', function() {
+            document.body.style.backgroundColor = '#ffc0cb'; // Light pink when hovering
+        });
+
+        document.getElementById('profile-pic').addEventListener('mouseout', function() {
+            document.body.style.backgroundColor = '#ffffff'; // Back to white when mouse leaves
+        });
+    </script>
+</body>
+</html>
